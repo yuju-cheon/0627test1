@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html,body{font-family: "Ubuntu", sans-serif; color: #666;}
+@font-face{
+font-family:'DNFBitBitv2';
+font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{display: flex;}
+.header{width:400px;height: 100vh;background:linear-gradient(45deg,rgb(255, 145, 0),rgb(255, 176, 197)); color: #fff; position: fixed; left: 0; top: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 200px 60px 80px; box-sizing: border-box; transition: all 0.5s;}
+.logo{font-size: 48px; font-family:'DNFBitBitv2';}
+.line{width:120px; border-bottom: 2px solid #ffffffae;margin:15px 0;}
+.title::after{ content:"디자이너 천유주";letter-spacing: 2px;color: rgba(255,255,255,0.7); font-family: 'NeoDunggeunmo';}
+
+.sns{display: flex; width: 100%; justify-content: space-between;}
+.sns>li{ font-size: 14px; margin: 0 5px; font-family: 'NeoDunggeunmo';}
+.sns>li i{padding-right: 5px; }
+.sns>li:hover a{color: blue;text-shadow: 0px 0px 10px #65fff7;}
+
+.contents{background-color: #efefef;width:100%; box-sizing: border-box;min-height: 100vh; padding:30px 0 30px 400px ;}
+.btns{display: flex; flex-direction: row-reverse; padding-right: 15px;}
+.btns>li{margin-right: 15px;background-color: #fff; width: 100px; height: 26px;text-align: center; line-height: 26px; border-radius: 5px; cursor: pointer; color: #999; font-size: 12px; font-weight: 500;box-shadow: 3px 2px 10px rgba(0,0,0,0.2) ; font-family: 'NeoDunggeunmo';}
+.active{color: #fff !important; background: linear-gradient(45deg,aqua,royalblue) !important;box-shadow: 3px 2px 20px rgba(0, 255, 255,0.6) !important }
+
+.box_wrap{display: flex; flex-wrap: wrap; box-sizing: border-box; align-items:flex-start ;margin: 15px;}
+.box{width: 20%;box-sizing: border-box;padding: 12px;}
+.inner{padding: 14px;background-color: #fff;border-radius: 4px; box-sizing: border-box;width: 100%;height: 100%; overflow: hidden;}
+.inner a{display: block;}
+.inner img{width: 100%;}
+.inner p:nth-of-type(1){line-height: 30px; font-weight: bold;font-family: 'NeoDunggeunmo';}
+.inner p:nth-of-type(2){font-size: 12px; color: #999; font-family: 'NeoDunggeunmo'; line-height:20px;}
+
+/*~1600px-4개*/
+@media all and (max-width:1600px){
+	.box{width: 25%;}
+	.header{width: 350px;}
+	.sns{flex-wrap: wrap;}
+	.sns>li{margin-bottom: 10px;}
+
+
+}
+
+/*~1200px-4개+header 위치*/
+@media all and (max-width:1200px){
+	.header{width: 100%; height: 90px ;padding: 0;z-index: 10;flex-direction: row; justify-content: space-between; align-items: center;padding: 0 30px;position: absolute;  }
+	.logo{font-size: 3vw; }
+	.sns{display: flex; flex-direction: row; justify-content: space-evenly; width: 30%;}
+	.line, .title::after{display: none;}
+	.sns>li{width: 30px; overflow: hidden; white-space: nowrap;}
+	.sns>li i{font-size: 20px;padding: 9px;}
+	.contents{padding: 110px 10px;}
+}
+
+/*~900 - 3개*/
+@media all and (max-width:900px){
+	.box{width: 33.3%;}
+	
+}
+
+
+/*~680 - 2개*/
+@media all and (max-width:680px){
+	.box{width: 50%;}
+	.logo{font-size: 30px;}
+	.sns{display: none;}
+}
+
+
+/*~540 - 1개*/
+@media all and (max-width:540px){
+	.box{width:100%;}
+	.sns{display: none;}
+	.btns{justify-content: space-between;padding: 0 27px;}
+	.btns>li{width: 30%; margin: 0;}
+}
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>갤러리 웹페이지</title>
+ <link href="css/reset.css" rel="stylesheet">
+ <link href="css/jquery.fancybox.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <script src="js/jquery-3.7.1.js"></script>
+ <script src="js/isotope.pkgd.min.js"></script>
+ <script src="js/jquery.fancybox.js"></script>
+ <script src="js/script.js" defer></script>
+ <link href="favicon.ico" rel="shortcut icon">
+ <script src="https://kit.fontawesome.com/5a7895e034.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <div class="container"><!--flex-->
+  <header class="header"><!--20% * 100vh,배경색,-->
+   <div class="title">
+    <div class="logo">
+    PORTFOLIO GALLARY
+    </div>
+    <div class="line"></div>
+   </div><!-- title end-->
+   <ul class="sns">
+    <li><a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a></li> 
+    <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li> 
+    <li><a href="#"><i class="fa-solid fa-envelope"></i>E-mail</a></li>
+   </ul>
+  </header>
+  <div class="contents"><!-- 가로사이즈, 배경색,-->
+   <ul class="btns">
+    <li class="active" data-filter="*">ALL</li><!--100px*26px-->
+    <li data-filter=".DESIGN">DESIGN</li>
+    <li data-filter=".WEB">WEB</li>
+   </ul>
+   <div class="box_wrap">
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/블랜드포스터.jpg" class="fancybox" rel="DESIGN">
+       <img src="imgs/블랜드포스터.jpg" alt="">
+       <p>블랜드 포스터</p>
+       <p>블랜드 툴을 이용한 일러스트 포스터</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 1 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/동영상웹페이지 목업_1.jpg" class="fancybox" rel="WEB" >
+       <img src="imgs/동영상웹페이지 목업_1.jpg" alt="">
+       <p>BUSAN IS GOOD </p>
+       <p>부산광역시를 홍보하는 반응형 웹페이지</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 2 end-->
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/상세페이지 시안.jpg" class="fancybox" rel="DESIGN" >
+       <img src="imgs/상세페이지 시안.jpg" alt="">
+       <p>여름 반려식물 기획 상세페이지 제작</p>
+       <p>여름 반려식물인 수박페페 판매 상세페이지</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 3 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/동영상웹페이지 목업_2.jpg" class="fancybox"rel=" WEB"  >
+       <img src="imgs/동영상웹페이지 목업_2.jpg" alt="">
+       <p>BUSAN IS GOOD</p>
+       <p>부산광역시를 홍보하는 반응형 웹페이지</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 4 end-->
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/로슈팟 스탠드 목업.jpg"class="fancybox"rel="DESIGN" >
+       <img src="imgs/로슈팟 스탠드 목업.jpg" alt="">
+       <p>BI 제작</p>
+       <p>저당 전문 디저트 카페인 'LO-SUPOT!'<br> 브랜드 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 5 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/동영상웹페이지 캡처_1.png" class="fancybox"rel="WEB">
+       <img src="imgs/동영상웹페이지 캡처_1.png" alt="">
+       <p>BUSAN IS GOOD</p>
+       <p>부산광역시를 홍보하는 반응형 웹페이지</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 6 end-->
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/로슈팟 오리지널 간판.jpg" class="fancybox"rel="DESIGN" >
+       <img src="imgs/로슈팟 오리지널 간판.jpg" alt="">
+       <p>BI 제작</p>
+       <p>저당 전문 디저트 카페인 'LO-SUPOT!' <br>브랜드 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 7 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/뮤직플레이어 변형_목업2.jpg" class="fancybox"rel="WEB">
+       <img src="imgs/뮤직플레이어 변형_목업2.jpg" alt="">
+       <p>RIIZE 1ST MINI ALBUM PLAYER</p>
+       <p>그룹 RIIZE의 미니앨범 뮤직플레이어 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 8 end-->
+    <div class="box DESIGN" >
+     <div class="inner">
+      <a href="imgs/머그컵 목업.jpg" class="fancybox"rel="DESIGN">
+       <img src="imgs/머그컵 목업.jpg" alt="">
+       <p>BI 제작</p>
+       <p>저당 전문 디저트 카페인 'LO-SUPOT!'<br> 브랜드 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 9 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/뮤직플레이어 변형_목업1.jpg" class="fancybox"rel="WEB">
+       <img src="imgs/뮤직플레이어 변형_목업1.jpg" alt="">
+       <p>RIIZE 1ST MINI ALBUM PLAYER</p>
+       <p>그룹 RIIZE의 미니앨범 뮤직플레이어 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 10 end-->
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/포스터 수정.jpg"class="fancybox"rel="DESIGN" >
+       <img src="imgs/포스터 수정.jpg" alt="">
+       <p>사천 에어쇼 포스터</p>
+       <p>경남 사천의 사천에어쇼 포스터 리디자인</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 11 end-->
+    <div class="box DESIGN">
+     <div class="inner">
+      <a href="imgs/도형포스터 수정.jpg  " class="fancybox"rel="DESIGN">
+       <img src="imgs/도형포스터 수정.jpg  " alt="">
+       <p>도형 포스터</p>
+       <p>도형을 이용한 일러스트 포스터</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 12 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/천유주_브랜드홍보웹페이지_제작.jpg"class="fancybox"rel="WEB" >
+       <img src="imgs/천유주_브랜드홍보웹페이지_제작.jpg" alt="">
+       <p>의류브랜드'KUEL' 홈페이지</p>
+       <p>의류브랜드'KUEL'의 S/S 시즌 홈페이지 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 13 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/목업.jpg" class="fancybox"rel="WEB">
+       <img src="imgs/목업.jpg" alt="">
+       <p>드라마 '작은아씨들' 등장인물</p>
+       <p>드라마 '작은아씨들' 핵심 등장인물<br> 프로필 카드 제작 </p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 14 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/동영상웹페이지 캡처_2.png" class="fancybox"rel="WEB">
+       <img src="imgs/동영상웹페이지 캡처_2.png " alt="">
+       <p>BUSAN IS GOOD
+       </p>
+       <p>부산광역시를 홍보하는 반응형 웹페이지</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 15 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/파노라마웹페이지_시카고_목업.jpg" class="fancybox"rel="WEB">
+       <img src="imgs/파노라마웹페이지_시카고_목업.jpg" alt="">
+       <p>뮤지컬'시카고' 홍보 웹페이지</p>
+       <p>뮤지컬 '시카고'를 홍보하는 파노라마형<br> 웹페이지 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 16 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/스크린샷(39).png" class="fancybox"rel="WEB">
+       <img src="imgs/스크린샷(39).png" alt="">
+       <p>드라마 '작은아씨들' 등장인물</p>
+       <p>드라마 '작은아씨들' 핵심 등장인물<br> 프로필 카드 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 17 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/파노라마웹페이지_시카고_목업_1.jpg" class="fancybox"rel="WEB">
+       <img src="imgs/파노라마웹페이지_시카고_목업_1.jpg" alt="">
+       <p>뮤지컬'시카고' 홍보 웹페이지</p>
+       <p>뮤지컬 '시카고'를 홍보하는 파노라마형<br> 웹페이지 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 18 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/스크린샷(40).png" class="fancybox"rel="WEB" >
+       <img src="imgs/스크린샷(40).png" alt="">
+       <p>드라마 '작은아씨들' 등장인물</p>
+       <p>드라마 '작은아씨들' 핵심 등장인물 <br> 프로필 카드 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 19 end-->
+    <div class="box WEB">
+     <div class="inner">
+      <a href="imgs/천유주_브랜드홍보홈페이지.png"  class="fancybox"rel="WEB">
+       <img src="imgs/천유주_브랜드홍보홈페이지.png" alt="">
+       <p>의류브랜드'KUEL' 홈페이지 제작</p>
+       <p>의류브랜드'KUEL'의 S/S 시즌 홈페이지 제작</p>
+      </a>
+     </div><!--inner(100%*100%,배경희색,패딩,모서리둥글게) end-->
+    </div><!-- box 20 end-->
+
+
+   </div><!-- box wrap end-->
+  </div><!-- contents end-->
+ </div><!-- container end -->
+</body>
+</html>
